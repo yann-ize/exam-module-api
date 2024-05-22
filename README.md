@@ -41,6 +41,7 @@ Ces informations seront utilisées par les futures applications mobiles et des s
         Departement : int id
         Departement : string numero
         Departement : string label
+        Departement : string region
         Mairie : string label
         Mairie : string adresse
         Mairie : string codePostal
@@ -63,6 +64,8 @@ Ces informations seront utilisées par les futures applications mobiles et des s
     - `docker exec -it api /bin/bash`
 - Installation des dépendances
     - `composer install`
+- Migration de la base de données
+    - `symfony console d:m:m`
 
 ## Commandes d'imports des datas
 
