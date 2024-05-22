@@ -3,11 +3,6 @@
 namespace App\Services;
 
 use App\Entity\Departement;
-use App\Entity\Mairie;
-use App\Entity\Region;
-use App\Repository\DepartementRepository;
-use App\Repository\MairieRepository;
-use App\Repository\RegionRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use League\Csv\Exception;
 use League\Csv\Reader;
@@ -15,7 +10,6 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 
 class ImportDepartementsService
 {
-
 
     public function __construct(
         private readonly EntityManagerInterface $em,
